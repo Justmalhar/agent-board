@@ -28,7 +28,7 @@ export async function POST(req: Request) {
                 delve, dive, deep, (most common) tapestry, intriguing, holistic, intersection, not only ... but ... (standard inversions), dancing metaphores,Site specific: (shipping) - navigate into, sail into the future(research) - ethical considerations, area, realm, in the field of (even if it already knows the field), in the <> of (completely unecessary), in the age of, in the search of.At the end of almost every long essay prompt: Paragraph idea: Save the world, make the world better, in the future, it is essential to <>.In essence, may seem counterintuitive
         
                 # Output Instructions
-                Write the note in markdown format using various sections such as tables, >, *italics*, **bold**, headings from # to ######, internal note links to common keywords or keywords which should be explored further for the note in Wikipedia style`,
+                Write the note in markdown format using various sections such as tables, >, *italics*, **bold**, headings from # to ######, internal note links to common keywords or keywords which should be explored further for the note in Wikipedia style. We are already using react-markdown to render the markdown so don't add markdown block in the output with \`\`\`.`,
           },
           {
             role: "user",
