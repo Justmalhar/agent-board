@@ -13,7 +13,7 @@ export function Header() {
           >
             <Bot className="h-6 w-6 text-primary" />
             <div className="flex flex-col">
-              <span className="font-bold text-xl text-primary tracking-tight">AgentBoard</span>
+              <span className="font-bold text-xl text-primary tracking-tight">AgentsBoard</span>
               <span className="text-sm text-muted-foreground hidden sm:inline leading-tight">
                 Your AI-Powered Kanban Board
               </span>
@@ -23,7 +23,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <Link
-            href="https://github.com/Justmalhar/agent-board"
+            href="https://github.com/Justmalhar/AgentsBoard"
             target="_blank"
             rel="noopener noreferrer"
           >

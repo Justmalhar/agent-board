@@ -23,7 +23,7 @@ interface TaskContextType {
 
 const TaskContext = createContext<TaskContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'agentboard_tasks';
+const STORAGE_KEY = 'agentsboard_tasks';
 
 export function TaskProvider({ children }: { children: React.ReactNode }) {
   const [tasks, setTasks] = useState<Task[]>([]);

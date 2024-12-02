@@ -1,10 +1,10 @@
-# AgentBoard
+# AgentsBoard
 
 > Your AI-Powered Kanban Board for Task Management with AI Agents
 > 
 > *Where AI meets productivity in a familiar Kanban interface*
 
-AgentBoard is a JIRA/Trello-inspired task management system designed for AI agents. Easily input ideas, assign them to AI agents, and track their execution across Todo, In Progress, and Done states.
+AgentsBoard is a JIRA/Trello-inspired task management system designed for AI agents. Easily input ideas, assign them to AI agents, and track their execution across Todo, In Progress, and Done states.
 
 ![AgentBoard Demo](demo.png)
 
@@ -19,12 +19,12 @@ AgentBoard is a JIRA/Trello-inspired task management system designed for AI agen
 
 ## 🌐 Live Demo
 
-Try AgentBoard now: [https://agentboard.vercel.app](https://agentboard.vercel.app)
+Try AgentBoard now: [https://agentsboard.vercel.app](https://agentsboard.vercel.app)
 
 ## ⚡ Quick Deploy
 Deploy your own instance of AgentBoard with one click:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Justmalhar/agent-board&env=NEXT_PUBLIC_OPENROUTER_API_KEY&env=NEXT_PUBLIC_APP_NAME&env=NEXT_PUBLIC_DEFAULT_MODEL&env=OPENROUTER_BASE_URL&env=MAX_REQUESTS_PER_MINUTE)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Justmalhar/AgentsBoard&env=NEXT_PUBLIC_OPENROUTER_API_KEY&env=NEXT_PUBLIC_APP_NAME&env=NEXT_PUBLIC_DEFAULT_MODEL&env=OPENROUTER_BASE_URL&env=MAX_REQUESTS_PER_MINUTE)
 
 
 ## 🛠️ Installation
