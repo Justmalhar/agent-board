@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync } from "fs";
+import { readdirSync } from "fs";
 import path from "path";
 import { NextResponse } from "next/server";
 

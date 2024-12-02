@@ -1,7 +1,3 @@
-import { openai } from "./openai";
-import path from "path";
-import { readFileSync } from "fs";
-
 export interface Agent {
   id: string;
   name: string;
