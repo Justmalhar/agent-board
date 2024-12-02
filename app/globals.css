@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Facebook Light Theme Colors */
+    --background: 0 0% 100%;
+    --foreground: 220 14% 4%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 14% 4%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 14% 4%;
+    
+    --primary: 214 89% 52%; /* Facebook Blue */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 14% 4%;
+    
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 14% 4%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 89% 52%;
+    
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Facebook Dark Theme Colors */
+    --background: 220 14% 10%;
+    --foreground: 0 0% 98%;
+    
+    --card: 220 14% 13%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 220 14% 13%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 214 89% 52%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 220 14% 16%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 220 14% 16%;
+    --muted-foreground: 220 9% 70%;
+    
+    --accent: 220 14% 16%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 220 14% 20%;
+    --input: 220 14% 20%;
+    --ring: 214 89% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Card Styles */
+.task-card {
+  @apply relative overflow-hidden transition-all duration-200 hover:shadow-md;
+}
+
+.task-card::before {
+  content: '';
+  @apply absolute inset-0 opacity-0 transition-opacity duration-200 bg-primary/5 pointer-events-none;
+}
+
+.task-card:hover::before {
+  @apply opacity-100;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+}
+
+/* Badge Styles */
+.badge-status {
+  @apply px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+/* Markdown Preview Styles */
+.prose {
+  @apply text-foreground max-w-none;
+}
+
+.prose pre {
+  @apply bg-secondary p-4 rounded-lg;
+}
+
+.prose code {
+  @apply bg-secondary px-1.5 py-0.5 rounded text-sm;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply font-bold text-foreground;
+}
+
+.prose a {
+  @apply text-primary underline hover:text-primary/80;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary/30 pl-4 italic;
+}
+
+/* Toast Styles */
+:root {
+  --toaster-success: var(--primary);
+  --toaster-error: #e74c3c; /* Example error color */
+  --toaster-background: var(--background);
+  --toaster-foreground: var(--foreground);
+}
+
+/* Markdown Styles */
+.markdown-body {
+  @apply text-foreground bg-background;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.markdown-body a {
+  @apply text-primary hover:text-primary/80 underline;
+}
+
+.markdown-body img {
+  @apply max-w-full h-auto rounded-lg my-4;
+}
+
+.markdown-body hr {
+  @apply my-6 border-t border-border;
+}
+
+.markdown-body strong {
+  @apply font-semibold;
+}
+
+.markdown-body table {
+  @apply w-full border-collapse;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  @apply border border-border;
+}
+
+.markdown-body pre {
+  @apply bg-secondary rounded-lg p-4 overflow-x-auto;
+}
+
+.markdown-body code {
+  @apply font-mono text-sm;
+}
+
+.markdown-body blockquote {
+  @apply border-l-4 border-primary/30 pl-4 my-4 italic;
+}
+
+/* Dialog improvements */
+.DialogContent {
+  @apply p-0 gap-0 flex flex-col;
+}
+
+.DialogHeader {
+  @apply sticky top-0 bg-background z-10 border-b flex-shrink-0;
+}
+
+/* Custom Scrollbar */
+.markdown-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.markdown-body::-webkit-scrollbar-track {
+  @apply bg-secondary/50 rounded-r-lg;
+}
+
+.markdown-body::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 rounded-full hover:bg-primary/30 transition-colors;
+}
+
+/* Container improvements */
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+/* Header animations */
+.header-link {
+  @apply transition-colors hover:text-primary;
+}
+
+/* Improved spacing */
+.content-section {
+  @apply py-8 space-y-4;
+}
