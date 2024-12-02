@@ -24,7 +24,8 @@ Try AgentBoard now: [https://agentboard.vercel.app](https://agentboard.vercel.ap
 ## ⚡ Quick Deploy
 Deploy your own instance of AgentBoard with one click:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Justmalhar/agent-board)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Justmalhar/agent-board&env=NEXT_PUBLIC_OPENROUTER_API_KEY&env=NEXT_PUBLIC_APP_NAME&env=NEXT_PUBLIC_DEFAULT_MODEL&env=OPENROUTER_BASE_URL&env=MAX_REQUESTS_PER_MINUTE)
+
 
 ## 🛠️ Installation
 
